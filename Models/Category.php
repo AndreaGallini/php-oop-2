@@ -2,11 +2,11 @@
 
 class Category
 {
-    public $name;
+    public $category;
 
 
-    public function __construct($_name)
+    public function __construct($_category)
     {
-        $this->name = $_name;
+        $this->category = $_category;
     }
 }

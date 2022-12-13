@@ -3,24 +3,26 @@
 include __DIR__ . '/../Models/Product.php';
 include __DIR__ . '/../Models/Kennel.php';
 //include __DIR__ . '/../Models/Game.php';
-$gatti = new Category('gatti');
-$cani = new Category('Cani');
-$croccettecane = new Product('crocchette', 19, 'monge', $cani);
-$croccettegatto = new Product('crocchette', 19, 'monge', $gatti);
-$kennelcane = new Kennel('M', 'nero', 'esterno', 'kennelesterno', 20, 'monge', $cani, ['a', 'b'], );
+$perGatto = new Category('gatti');
+$perCane = new Category('Cani');
+$croccettecane = new Product('crocchette', 19, 'monge', $perCane);
+$croccettegatto = new Product('crocchette', 19, 'monge', $perGatto);
+$kennelcane = new Kennel('M', 'nero', 'esterno', 'kennelesterno', 20, 'monge', $perCane, ['a', 'b'], );
 var_dump($kennelcane);
-//var_dump($croccettecane);
-//var_dump($croccettegatto);
+
 
 ?>
 
 <body>
     <div class="container-lg">
         <h2>
-            <?php echo $cani->name; ?>
+            <?php echo $perCane->category; ?>
         </h2>
         <div class="row">
-
+            <div class="col">
+                <img src="" alt="">
+                <h3></h3>
+            </div>
         </div>
 
 
