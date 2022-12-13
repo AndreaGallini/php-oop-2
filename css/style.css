@@ -1,0 +1,23 @@
+img{
+    width: 100%;
+}
+.footerInner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerInner img{
+    width: 20%;
+}
+.footerInner p{
+    margin-bottom: 0;
+}
+.my_col{
+    background-color: beige;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.vote{
+    padding-left: 3rem;
+}

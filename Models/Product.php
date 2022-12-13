@@ -6,9 +6,9 @@ class Product extends Category
     public int $price;
     public string $brand;
 
-    public function __construct($_nameproduct, int $_price, $_brand, $_name)
+    function __construct($_nameproduct, int $_price, $_brand, $_category, $_img)
     {
-        parent::__construct($_name);
+        parent::__construct($_category, $_img);
         $this->brand = $_brand;
         $this->nameproduct = $_nameproduct;
         $this->price = $_price;

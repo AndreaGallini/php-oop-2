@@ -8,9 +8,9 @@ class Food extends Product
     public $description;
     public $dogAge;
 
-    public function __construct($_taste, $_ingredients = [], $_nutritiveVote, $_description, $_dogAge, $_nameproduct, $_price, $_brand, $_name, $_materials = [])
+    public function __construct($_taste, $_nutritiveVote, $_description, $_dogAge, $_nameproduct, int $_price, $_brand, $_category, $_img, $_ingredients = [])
     {
-        parent::__construct($_nameproduct, $_price, $_brand, $_name);
+        parent::__construct($_nameproduct, $_price, $_brand, $_category, $_img);
         $this->taste = $_taste;
         $this->nutritiveVote = $_nutritiveVote;
         $this->ingedients = $_ingredients;
