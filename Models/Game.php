@@ -1,6 +1,6 @@
 <?php
 
-class Game
+class Game extends Product
 {
     public $dimension;
     public $color;

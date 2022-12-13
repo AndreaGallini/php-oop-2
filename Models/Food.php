@@ -1,5 +1,6 @@
 <?php
-class Food
+
+class Food extends Product
 {
     public $taste;
     public $ingedients;
