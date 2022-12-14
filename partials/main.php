@@ -98,9 +98,17 @@ $giocoCane1 = new Game('20x20', 'blu', 'puppy', 'gioco per cuccioli', 20, 'Boolg
                     Prezzo:
                     <?php echo $KennelCane1->price ?> €
                 </p>
+
                 <p>
                     Peso:
-                    <?php echo $KennelCane1->getPeso(); ?>
+                    <?php
+                    try {
+                        echo $KennelCane1->getPeso();
+                    } catch (Exception $e) {
+                        echo 'Eccezzione' . $e->getMessage();
+                    }
+
+                    ?>
                 </p>
                 <section class="footerInner">
                     <img src="<?php echo $KennelCane1->getImg() ?>" alt="">
