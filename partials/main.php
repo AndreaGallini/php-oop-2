@@ -10,6 +10,7 @@ $crocchetteCane1 = new Food('Manzo', 3, 'Alimento per grandi cani', 5, 'crocchet
 $crocchetteCane1->setPeso('12', 'Kg');
 
 $KennelCane1 = new Kennel('180x180x60', 'Color legno', 'Da esterno', 'Kennel', 190, 'BoolDog', 'cane', 'cane.jpeg', ['legno', 'acciaio']);
+$KennelCane1->setPeso('5', 'Kg');
 $giocoCane1 = new Game('20x20', 'blu', 'puppy', 'gioco per cuccioli', 20, 'Boolgame', 'cane', 'cane.jpeg');
 
 
@@ -96,6 +97,10 @@ $giocoCane1 = new Game('20x20', 'blu', 'puppy', 'gioco per cuccioli', 20, 'Boolg
                 <p>
                     Prezzo:
                     <?php echo $KennelCane1->price ?> €
+                </p>
+                <p>
+                    Peso:
+                    <?php echo $KennelCane1->getPeso(); ?>
                 </p>
                 <section class="footerInner">
                     <img src="<?php echo $KennelCane1->getImg() ?>" alt="">

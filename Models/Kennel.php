@@ -1,7 +1,8 @@
 <?php
-
+include_once __DIR__ . '/../Traits/Weight.php';
 class Kennel extends Product
 {
+    use Weight;
     public $size;
     public $materials;
     public $color;
