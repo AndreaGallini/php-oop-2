@@ -1,7 +1,9 @@
 <?php
+include_once __DIR__ . '/../Traits/Weight.php';
 
 class Food extends Product
 {
+    use Weight;
     public $taste;
     public $ingedients;
     public $nutritiveVote;

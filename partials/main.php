@@ -7,9 +7,10 @@ include __DIR__ . '/../Models/Food.php';
 $perGatto = new Category('gatto', 'gatto.jpeg');
 $perCane = new Category('Cane', 'cane.jpeg');
 $crocchetteCane1 = new Food('Manzo', 3, 'Alimento per grandi cani', 5, 'crocchette Monge', 50, 'monge', 'cane', 'cane.jpeg', ['manzo', 'uovo']);
+$crocchetteCane1->setPeso('12', 'Kg');
+
 $KennelCane1 = new Kennel('180x180x60', 'Color legno', 'Da esterno', 'Kennel', 190, 'BoolDog', 'cane', 'cane.jpeg', ['legno', 'acciaio']);
 $giocoCane1 = new Game('20x20', 'blu', 'puppy', 'gioco per cuccioli', 20, 'Boolgame', 'cane', 'cane.jpeg');
-
 
 
 
@@ -50,6 +51,10 @@ $giocoCane1 = new Game('20x20', 'blu', 'puppy', 'gioco per cuccioli', 20, 'Boolg
                 <p>
                     Prezzo:
                     <?php echo $crocchetteCane1->price ?> €
+                </p>
+                <p>
+                    Peso:
+                    <?php echo $crocchetteCane1->getPeso(); ?>
                 </p>
                 <section class="footerInner">
                     <img src="<?php echo $crocchetteCane1->getImg() ?>" alt="">
